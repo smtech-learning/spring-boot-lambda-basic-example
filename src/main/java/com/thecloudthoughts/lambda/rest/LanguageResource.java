@@ -23,6 +23,7 @@ public class LanguageResource {
                 new Language("go"),
                 new Language("Pascal"),
                 new Language("Native Language"),
+                new Language("Ruby-Python"),
                 new Language("C++")
         );
     }
