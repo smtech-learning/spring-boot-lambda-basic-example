@@ -1,9 +1,14 @@
-/Users/suresh/_learning/aws/Serverless/Lambda/spring-boot-lambda-basic-example/src/main/java/com/thecloudthoughts/lambda/config/DynamoDBConfig.java
 /Users/suresh/_learning/aws/Serverless/Lambda/spring-boot-lambda-basic-example/src/main/java/com/thecloudthoughts/lambda/Application.java
-/Users/suresh/_learning/aws/Serverless/Lambda/spring-boot-lambda-basic-example/src/main/java/com/thecloudthoughts/lambda/interfaces/PagingUserRepository.java
-/Users/suresh/_learning/aws/Serverless/Lambda/spring-boot-lambda-basic-example/src/main/java/com/thecloudthoughts/lambda/entity/User.java
+/Users/suresh/_learning/aws/Serverless/Lambda/spring-boot-lambda-basic-example/src/main/java/com/thecloudthoughts/lambda/rest/WebController.java
 /Users/suresh/_learning/aws/Serverless/Lambda/spring-boot-lambda-basic-example/src/main/java/com/thecloudthoughts/lambda/LambdaHandler.java
 /Users/suresh/_learning/aws/Serverless/Lambda/spring-boot-lambda-basic-example/src/main/java/com/thecloudthoughts/lambda/interfaces/UserRepository.java
 /Users/suresh/_learning/aws/Serverless/Lambda/spring-boot-lambda-basic-example/src/main/java/com/thecloudthoughts/lambda/config/Config.java
 /Users/suresh/_learning/aws/Serverless/Lambda/spring-boot-lambda-basic-example/src/main/java/com/thecloudthoughts/lambda/rest/LanguageResource.java
+/Users/suresh/_learning/aws/Serverless/Lambda/spring-boot-lambda-basic-example/src/main/java/com/thecloudthoughts/lambda/config/DynamoDBConfig.java
+/Users/suresh/_learning/aws/Serverless/Lambda/spring-boot-lambda-basic-example/src/main/java/com/thecloudthoughts/lambda/interfaces/PagingUserRepository.java
+/Users/suresh/_learning/aws/Serverless/Lambda/spring-boot-lambda-basic-example/src/main/java/com/thecloudthoughts/lambda/repo/CustomerRepository.java
+/Users/suresh/_learning/aws/Serverless/Lambda/spring-boot-lambda-basic-example/src/main/java/com/thecloudthoughts/lambda/entity/User.java
+/Users/suresh/_learning/aws/Serverless/Lambda/spring-boot-lambda-basic-example/src/main/java/com/thecloudthoughts/lambda/model/Customer.java
+/Users/suresh/_learning/aws/Serverless/Lambda/spring-boot-lambda-basic-example/src/main/java/com/thecloudthoughts/lambda/model/Product.java
 /Users/suresh/_learning/aws/Serverless/Lambda/spring-boot-lambda-basic-example/src/main/java/com/thecloudthoughts/lambda/model/Language.java
+/Users/suresh/_learning/aws/Serverless/Lambda/spring-boot-lambda-basic-example/src/main/java/com/thecloudthoughts/lambda/repo/ProductsRepository.java

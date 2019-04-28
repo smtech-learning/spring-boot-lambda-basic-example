@@ -24,6 +24,7 @@ public class LanguageResource {
                 new Language("Pascal"),
                 new Language("Native Language"),
                 new Language("Ruby-Python"),
+                new Language("Artificail Intelligence"),
                 new Language("C++")
         );
     }
