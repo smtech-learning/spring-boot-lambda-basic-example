@@ -16,6 +16,7 @@
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <start-class>com.thecloudthoughts.lambda.Application</start-class>
   </properties>
 
   <dependencies>
@@ -60,10 +61,14 @@
           <plugin>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-maven-plugin</artifactId>
+            <configuration>
+              <mainClass>${start-class}</mainClass>
+            </configuration>
           </plugin>
         </plugins>
       </build>
     </profile>
+
     <profile>
       <id>default</id>
       <activation>
@@ -85,11 +90,24 @@
                   <goal>shade</goal>
                 </goals>
                 <configuration>
+                  <!--
+                  <transformers>
+                    <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                      <manifestEntries>
+                      <mainClass>${start-class}</mainClass>
+                      </manifestEntries>
+                    </transformer>
+                  </transformers>
+                  -->
+
+                  <!-- Uncomment this if you deploy non Docker env
+
                   <artifactSet>
                     <excludes>
                       <exclude>org.apache.tomcat.embed:*</exclude>
                     </excludes>
                   </artifactSet>
+                  -->
                 </configuration>
               </execution>
             </executions>
@@ -97,6 +115,7 @@
         </plugins>
       </build>
     </profile>
+
   </profiles>
 
 

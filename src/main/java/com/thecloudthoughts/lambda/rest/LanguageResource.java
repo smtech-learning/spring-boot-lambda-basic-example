@@ -19,13 +19,8 @@ public class LanguageResource {
 
         return Arrays.asList(new Language("node"),
                 new Language("java"),
-                new Language("python"),
-                new Language("go"),
-                new Language("Pascal"),
-                new Language("Native Language"),
-                new Language("Ruby-Python"),
-                new Language("Artificail Intelligence"),
-                new Language("C++")
+                new Language("python")
+
         );
     }
 
