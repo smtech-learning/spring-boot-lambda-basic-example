@@ -4,9 +4,7 @@ import java.util.Arrays;
 
 import com.thecloudthoughts.lambda.repo.ProductsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.thecloudthoughts.lambda.model.Customer;
 import com.thecloudthoughts.lambda.model.Product;
@@ -28,9 +26,9 @@ public class WebController {
 		return "Done";
 	}
 
-	@RequestMapping("/hello")
-	public String hello() {
-		return "Hello world";
+	@RequestMapping("/hello/{name}")
+	public String hello(@PathVariable("name") String name) {
+		return "Hello world" + name;
 	}
 
 	@RequestMapping("/saveProducts")
@@ -45,6 +43,14 @@ public class WebController {
 
 
 		return "Done- pl validate";
+	}
+
+
+	@PostMapping("/addProduct")
+	public String addProduct(@RequestBody Product product) {
+		// save a single Customer
+		Productrepository.save(product);
+		return "Done- pl validate" + " : "  + product.getProductLongName();
 	}
 
 
